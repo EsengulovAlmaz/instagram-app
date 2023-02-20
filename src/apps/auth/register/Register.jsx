@@ -46,11 +46,11 @@ export default function Register() {
     return (
         <Components.Container>
             <section className={cls.register_page}>
-                <div className={cls.register_page_card}>
+                <div className={cls.register_page_card} data-aos="zoom-in-down">
                     <Components.Image src={Logo} />
                     <h3>Sign up to see photos and videos from your friends.</h3>
 
-                    <form onSubmit={handleSubmit(onSubmit)}>
+                    <form onSubmit={handleSubmit(onSubmit)} >
                         <Components.Forms.Divider>
                             <Components.Forms.TextInput
                                 type="text"
@@ -133,14 +133,7 @@ export default function Register() {
                     </form>
                 </div>
 
-                <div className={cls.register_page_bottomCard}>
-                    <p>
-                        Have an account?
-                        <Link to={AuthPath.login}>
-                            Log in
-                        </Link>
-                    </p>
-                </div>
+                <Components.Forms.AuthNavigate location="register"/>
             </section>
         </Components.Container>
     )

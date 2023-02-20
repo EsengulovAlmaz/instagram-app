@@ -10,7 +10,7 @@ export default function AuthRoutes() {
         <React.Fragment>
             <Switch>
                 <Route path={Auth.register} element={<AuthPages.Register />} />
-                <Route path={Auth.login} elemen={<AuthPages.Login />} />
+                <Route path={Auth.login} element={<AuthPages.Login />} />
             </Switch>
         </React.Fragment>
     )
