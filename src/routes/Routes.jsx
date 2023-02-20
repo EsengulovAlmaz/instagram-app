@@ -6,6 +6,7 @@ import { Route, Routes as Switch } from 'react-router-dom';
 import { Routers } from '../pages';
 import { Apps } from '../services/Path';
 import "aos/dist/aos.css";
+import { Components } from '../components';
 
 
 export default function Routes() {
@@ -14,12 +15,13 @@ export default function Routes() {
             duration: 1000
         })
     }, []);
-    
+
     return (
         <React.Fragment>
-            <React.Suspense fallback={<h1>Loading</h1>}>
+            <React.Suspense fallback={<Components.Loader />}>
                 <Switch>
                     <Route path={Apps.accounts} element={<Routers.AuthRoutes />} />
+                    <Route path={Apps.layout} element={<Routers.LayoutRoutes />} />
                 </Switch>
             </React.Suspense>
         </React.Fragment>
