@@ -1,0 +1,81 @@
+
+.posts_wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30;
+
+    &_inline {
+        .posts_card {
+            width: 470px;
+            &_head {
+                &_inline {
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        width: 34px;
+                        height: 34px;
+                        border-radius: 100%;
+                        object-fit: cover;
+                        object-position: top;
+                        cursor: pointer;
+                    }
+                    h4 {
+                        margin-left: 20px;
+                    }
+                }
+            }
+
+            &_body {
+                img {
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                    cursor: pointer;
+                }
+            }
+
+            &_foot {
+                margin-top: 10px;
+                &_inline {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    svg {
+                        font-size: 28px;
+                        cursor: pointer;
+                        margin: 0 7px;
+                    }
+                }
+
+                &_likes {
+                    margin-left: 7px;
+                    p {
+                        margin-bottom: 0px;
+                    }
+                }
+
+                &_title {
+                    margin-top: 5px;
+                    margin-left: 7px;
+                    div {
+                        display: flex;
+                        align-items: center;
+
+                        h4 {
+                            margin-right: 8px;
+                            font-weight: 700;
+                            font-size: 14px;
+                            margin-top: 0;
+                        } 
+                        p {
+                            margin-top: 0;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

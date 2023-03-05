@@ -13,7 +13,13 @@ export const AuthPages = {
 
 //LAYOUT PAGES
 const Home = React.lazy(() => import("../apps/layout/home/Home"));
+const Profile = React.lazy(() => import("../apps/layout/profile/Profile"));
+const Users = React.lazy(() => import("../apps/layout/users/Users"));
+const Subscribers = React.lazy(() => import("../apps/layout/subscribers/Subscribers"));
 
 export const LayoutPages = {
-    Home
+    Home,
+    Profile,
+    Users,
+    Subscribers
 };
